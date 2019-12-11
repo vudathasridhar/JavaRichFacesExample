@@ -1,0 +1,8 @@
+docker build --tag=sp/jboss5 .
+
+docker run -it -p 8080:8080 sp/jboss5 ./run.sh -b 0.0.0.0
+
+
+#docker run -p 8080:8080 -p 9990:9990 -it surya/jboss /opt/jboss/wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0
+#Administration console will be available on the port 9990 of the container.
+
